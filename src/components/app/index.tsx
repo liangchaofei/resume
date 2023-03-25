@@ -16,6 +16,7 @@ type Props = {};
 export default function App({ }: Props) {
     let initial = initialState;
     try {
+        // @ts-ignore
         const local = JSON.parse(localStorage.getItem("refuseme_data"));
         if (local) {
             initial = local;
